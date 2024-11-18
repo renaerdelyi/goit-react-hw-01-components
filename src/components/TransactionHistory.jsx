@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './TransactionHistory.css';
 
-function TransactionHistory(items) {
+function TransactionHistory({items}) {
   return (
     <table className="transaction-history">
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th>TYPE</th>
+          <th>AMOUNT</th>
+          <th>CURRENCY</th>
         </tr>
       </thead>
 

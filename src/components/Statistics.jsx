@@ -22,7 +22,7 @@ function Statistics({title,stats}){
 }
 
 Statistics.propTypes={
-    title:PropTypes.string.isRequired,
+    title:PropTypes.string,
     stats:PropTypes.arrayOf(
 PropTypes.shape({
     id:PropTypes.string.isRequired,

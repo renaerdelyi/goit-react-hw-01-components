@@ -4,6 +4,8 @@ import Statistics from './Statistics';
 import data from './data';
 import FriendList from './FriendList';
 import friends from './friends.json';
+import TransactionHistory from './TransactionHistory';
+import transactions from './transactions.json';
 
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
       <Statistics stats={data} />
 
       <FriendList friends={friends} />;
+
+      <TransactionHistory items={transactions} />;
     </div>
   );
 }

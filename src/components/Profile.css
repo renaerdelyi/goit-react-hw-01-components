@@ -51,8 +51,9 @@
   list-style: none;
   background-color: rgb(224, 217, 217);
   padding: 30px;
-  border-top: 2px solid rgb(112, 103, 103);}
-  
+  border-top: 2px solid rgb(112, 103, 103);
+}
+
 .label {
   display: flex;
   justify-content: center;

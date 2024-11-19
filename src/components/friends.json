@@ -23,8 +23,10 @@
     "name": "Cherie",
     "isOnline": false
   },
-  { "id": 5, 
-  "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png", 
-  "name": "Apple", 
-  "isOnline": false }
+  {
+    "id": 5,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
+    "name": "Apple",
+    "isOnline": false
+  }
 ]

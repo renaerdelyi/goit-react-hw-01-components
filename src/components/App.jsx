@@ -7,7 +7,6 @@ import friends from './friends.json';
 import TransactionHistory from './TransactionHistory';
 import transactions from './transactions.json';
 
-
 function App() {
   const user = {
     username: 'Jacques Gluke',
@@ -38,12 +37,8 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
-
       <FriendList friends={friends} />;
-
       <TransactionHistory items={transactions} />;
     </div>
   );

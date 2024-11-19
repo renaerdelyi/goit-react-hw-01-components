@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './TransactionHistory.css';
 
-function TransactionHistory({items}) {
+function TransactionHistory({ items }) {
   return (
     <table className="transaction-history">
       <thead>
@@ -14,12 +14,12 @@ function TransactionHistory({items}) {
       </thead>
 
       <tbody>
-        {items.map(({id, type, amount, currency}) => (
-        <tr key ={id}>
-          <td>{type}</td>
-          <td>{amount}</td>
-          <td>{currency}</td>
-        </tr>
+        {items.map(({ id, type, amount, currency }) => (
+          <tr key={id}>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
+          </tr>
         ))}
       </tbody>
     </table>
@@ -27,15 +27,14 @@ function TransactionHistory({items}) {
 }
 
 TransactionHistory.propTypes = {
-items: PropTypes.arrayOf(
+  items: PropTypes.arrayOf(
     PropTypes.shape({
-        id : PropTypes.string.isRequired,
-        type : PropTypes.string.isRequired,
-        amount : PropTypes.string.isRequired,
-        currency : PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
     })
-).isRequired,
+  ).isRequired,
 };
-
 
 export default TransactionHistory;

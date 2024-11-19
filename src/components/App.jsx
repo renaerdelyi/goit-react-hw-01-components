@@ -42,6 +42,6 @@ function App() {
       <TransactionHistory items={transactions} />;
     </div>
   );
-}
+};
 
 export default App;

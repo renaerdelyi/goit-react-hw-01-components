@@ -1,11 +1,12 @@
 import React from 'react';
-import Profile from './Profile';
-import Statistics from './Statistics';
+import Profile from './Profile/Profile';
+import Statistics from './Statistics/Statistics';
 import data from './data.json';
-import FriendList from './FriendList';
+import FriendList from './FriendList/FriendList';
 import friends from './friends.json';
-import TransactionHistory from './TransactionHistory';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 import transactions from './transactions.json';
+import styles from './App.module.css';
 
 function App() {
   const user = {
@@ -21,14 +22,15 @@ function App() {
   };
   return (
     <div
-    // style={{
-    //   height: '100vh',
-    //   display: 'flex',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   fontSize: 40,
-    //   color: '#010101',
-    // }}
+      className={styles.appstyle}
+      // style={{
+      //   height: '100vh',
+      //   display: 'flex',
+      //   justifyContent: 'center',
+      //   alignItems: 'center',
+      //   fontSize: 40,
+      //   color: '#010101',
+      // }}
     >
       <Profile
         username={user.username}
@@ -42,6 +44,6 @@ function App() {
       <TransactionHistory items={transactions} />;
     </div>
   );
-};
+}
 
 export default App;

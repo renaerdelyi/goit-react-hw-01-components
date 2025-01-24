@@ -1,0 +1,8 @@
+.appstyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(213, 213, 233);
+  gap: 20px;
+}
